@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*This is a program to
+*main - This is a program to
 *print _putchar
 *and return 0
 */
