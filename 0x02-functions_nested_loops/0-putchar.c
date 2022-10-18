@@ -1,10 +1,9 @@
 #include "main.h"
 /**
- * This is a program to 
- * print _putchar
- * and return 0
- */
-
+*This is a program to 
+*print _putchar
+*and return 0
+*/
 int main(void)
 {
 _putchar('_');
@@ -18,4 +17,3 @@ _putchar('r');
 _putchar('\n');
 return (0);
 }
-
