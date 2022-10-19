@@ -1,9 +1,10 @@
 #include "main.h"
 /**
-*main - This is a program to
-*print _putchar
-*and return 0
-*/
+ * main - Entry point
+ *
+ * return 0
+ */
+
 int main(void)
 {
 _putchar('_');
