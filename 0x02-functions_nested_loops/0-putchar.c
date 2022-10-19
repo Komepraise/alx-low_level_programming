@@ -1,5 +1,9 @@
 #include "main.h"
-/*Print the Character _putchar and return 0*/
+/**
+ * main - print _putchar
+ * Return: 0
+ */
+
 
 int main(void)
 {
