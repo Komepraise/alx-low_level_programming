@@ -9,7 +9,7 @@ int i, n;
 n = _strlen(s);
 for
 (i = n - 1;
-s[i] != '\0'; i--)
+i >= 0; i--)
 {
 _putchar(s[i]);
 }
