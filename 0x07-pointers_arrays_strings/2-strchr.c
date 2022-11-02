@@ -5,7 +5,7 @@
  * c: the character
  * Returns: string
  */
-char *_strchr(char *s, char c);
+char *_strchr(char *s, char c)
 {
 	int a = 0, b;
 
