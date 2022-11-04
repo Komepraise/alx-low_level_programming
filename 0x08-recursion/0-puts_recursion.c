@@ -2,7 +2,7 @@
 /**
  * _puts_recursion: The function being defined
  * @*S: the character
- * Resturns: 0
+ * Returns: 0
  */
 void _puts_recursion(char *s)
 {
@@ -13,6 +13,6 @@ void _puts_recursion(char *s)
 	}
 	_putchar(*s);
 	s++;
-	_puts_recursion(char *s);
+	_puts_recursion(s);
 }
 
