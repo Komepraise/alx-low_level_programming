@@ -1,4 +1,4 @@
-nclude "Main.h"
+#include "main.h"
 /**
  * _puts_recursion: The function being defined
  * @*S: the character
