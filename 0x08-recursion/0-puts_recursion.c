@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * _puts_recursion: The function being defined
- * @*S: the character
- * Returns: 0
+ * _puts_recursion -> The function being defined
+ * @s: the character
  */
 void _puts_recursion(char *s)
 {
