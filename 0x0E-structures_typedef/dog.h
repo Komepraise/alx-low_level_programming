@@ -5,6 +5,9 @@
  * @name: The dog's name
  * @age: The dog's age
  * @owner: the dog's owner
+ *
+ * Description: A new type of structure
+ * with the arguments name, age and owner
  */
 struct dog
 {
