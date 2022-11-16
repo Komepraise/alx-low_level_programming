@@ -7,7 +7,6 @@
 *dog - The structure name
 *@name: the name of the dog
 *@age: the age of the dog
-*struct dog - the structure
 *@owner: the owner of the dog
 */
 
