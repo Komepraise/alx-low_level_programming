@@ -2,7 +2,7 @@
 
 /**
  * An infinite loop function
- * main - causes an infinite loop
+ * main -> causes an infinite loop
  * Return: 0
  * @\\o/\n: the expected output
  */
