@@ -1,8 +1,10 @@
 #include <stdio.h>
 
 /**
+ * An infinite loop function
  * main - causes an infinite loop
  * Return: 0
+ * @\\o/\n: the expected output
  */
 
 int main(void)
