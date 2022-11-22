@@ -19,7 +19,6 @@ void print_line(int n)
 		x++)
 
 			_putchar(95);
-		_putchar('_');
 	_putchar('\n');
 	}
 }
