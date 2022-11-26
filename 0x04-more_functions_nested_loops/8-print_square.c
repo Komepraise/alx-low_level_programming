@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * print_square - a function that prints a square, followed by a new line
@@ -11,8 +11,7 @@ void print_square(int size)
 
 	if
 		(size <= 0)
-		putchar('\n');
-		}
+		_putchar('\n');
 		else
 		{
 		for
@@ -20,16 +19,16 @@ void print_square(int size)
 			 co <= size;
 			 co++)
 			{
-			putchar('#');
+			_putchar('#');
 			for
 				(ro = 2;
 				ro <= size;
 				ro++)
 				{
-				putchar('#');
+				_putchar('#');
 				}
-				putchar('\n');
+				_putchar('\n');
 				}
-				}
-}
+		}		
+		}
 
