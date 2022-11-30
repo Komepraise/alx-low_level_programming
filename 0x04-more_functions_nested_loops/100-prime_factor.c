@@ -1,26 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-/**
- * main - prints the biggest prime factor of a number.
- * Return: Always 0.
- */
-int main(void)
-{
-		long int number;
 
-			number = 612852475143;
-
-				if
-					(isPrime(number) == 1)
-					{
-						printf("%ld\n", number);
-					}
-					else
-					{
-					printf("%ld\n", biggestFactor(number));
-					}
-				return (0);
-}
 /**
  * isPrime - analise if a number is prime or not
  * @n: number to check
@@ -93,4 +73,23 @@ long int biggestFactor(long int a)
 		}
 	}
 	return (factor);
+}
+/**
+ * main - prints the biggest prime factor of a number.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	long int number;
+	number = 612852475143;
+	if (isPrime(number) == 1)
+	{
+		printf("%ld\n", number);
+	}
+	else
+	{
+		printf("%ld\n", biggestFactor(number));
+	}
+	return (0);
 }
