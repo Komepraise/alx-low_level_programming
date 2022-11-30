@@ -82,6 +82,7 @@ long int biggestFactor(long int a)
 int main(void)
 {
 	long int number;
+
 	number = 612852475143;
 	if (isPrime(number) == 1)
 	{
