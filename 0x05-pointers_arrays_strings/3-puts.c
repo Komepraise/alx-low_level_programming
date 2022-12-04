@@ -7,7 +7,7 @@
 void _puts(char *str)
 {
 if ( 
-*str!= '\0');
+*str!= '\0')
 str++;
 {
 _putchar(*str);
