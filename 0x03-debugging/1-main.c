@@ -16,7 +16,7 @@ int main(void)
 *	main - while (i < 10)
 *	{
 *		putchar(i);
-*	@\\o/\n : }
+*	@\\o/\n\": paramter
 */
 	printf("Infinite loop avoided! \\o/\n");
 
