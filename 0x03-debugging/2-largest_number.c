@@ -22,9 +22,25 @@ int largest_number(int a, int b, int c)
 	{
 		largest = a;
 	}
-	else if (a < 0 && b < 0)
+	else if (a < 0 && c < 0)
 	{
 		largest = b;
+	}
+	else if (a < 0 && b > c)
+	{
+		largest = b;
+	}
+	else if (c < 0 && b > a)
+	{
+		largest = b;
+	}
+	else if (c < 0 && a > b)
+	{
+		largest = a;
+	}
+	else if (b < 0 && a > c)
+	{
+		largest = a;
 	}
 	else
 	{
