@@ -10,19 +10,18 @@ void print_times_table(int n)
 
 	if
 
-		(n < 15 || n > 0);
+		(n < 15 || n > 0)
 	{
-		int x, y, z;
 
 		for (x = 0;
-			 x <= 9;
+			 x <= n;
 			 x++)
 		{
 			_putchar('0');
 			_putchar(',');
 			_putchar(' ');
 			for (y = 1;
-				 y <= 9;
+				 y <= n;
 				 y++)
 			{
 				z = (x * y);
