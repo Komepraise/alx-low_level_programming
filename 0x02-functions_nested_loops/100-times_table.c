@@ -38,7 +38,6 @@ void print_times_table(int n)
 				if
 					(y < 9)
 				{
-					_putchar(',');
 					_putchar(' ');
 				}
 			}
