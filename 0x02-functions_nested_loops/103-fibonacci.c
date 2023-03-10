@@ -22,6 +22,6 @@ int main(void)
 		fib2 = fibno;
 	}
 	printf("%.0f\n", sum);
-	return 0;
+	return (0);
 
 }
