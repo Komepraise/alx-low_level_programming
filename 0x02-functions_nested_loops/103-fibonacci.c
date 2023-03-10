@@ -10,7 +10,6 @@
 
 int main(void)
 {
-	int count;
 	unsigned long fib1 = 0, fib2 = 1, fibno, sum;
 
 	while (fibno < 4000000)
