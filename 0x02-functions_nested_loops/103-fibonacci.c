@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main - prints the sum of the irst 50 fibonacci numbers
+ *
+ * Return: 0
+ *
+ */
+
+int main(void)
+{
+	int count;
+	unsigned long fib1 = 0, fib2 = 1, fibno, sum;
+
+	while (fibno < 4000000)
+	{
+		fibno = fib1 + fib2;
+		if ((fibno % 2) == 0)
+			sum += fibno;
+		fib1 = fib2;
+		fib2 = fibno;
+	}
+	printf("%lu", sum);
+
+}
