@@ -10,7 +10,8 @@
 
 int main(void)
 {
-	unsigned long fib1 = 0, fib2 = 1, fibno, sum;
+	unsigned long fib1 = 0, fib2 = 1, fibno;
+	float sum;
 
 	while (fibno < 4000000)
 	{
@@ -20,6 +21,6 @@ int main(void)
 		fib1 = fib2;
 		fib2 = fibno;
 	}
-	printf("%lu", sum);
+	printf("%.0f\n", sum);
 
 }
