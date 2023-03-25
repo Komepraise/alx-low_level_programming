@@ -1,52 +1,54 @@
-#include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
-/**
- * main - Generates random valid passwords for the program 101-crackme.
- *
- * description: finds checksum value from objdump
- *
- * Return: 0
- */
+#include <time.h>
 
+/**
+ * main - Generates random valid passwords for the
+ *        program 101-crackme.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	int counter, sum, random;
+	char password[84];
+	int index = 0, sum = 0, diff_half1, diff_half2;
 
-	sum = 0;
-	counter = 0;
-	random = 0;
-
-	char password [80];
-
-	srand(time(NULL));
+	srand(time(0));
 
 	while (sum < 2772)
 	{
+		password[index] = 33 + rand() % 94;
+		sum += password[index++];
+	}
 
-		if (2772 - sum < 48)
+	password[index] = '\0';
+
+	if (sum != 2772)
 	{
-		sum -= password[--counter];
+		diff_half1 = (sum - 2772) / 2;
+		diff_half2 = (sum - 2772) / 2;
+		if ((sum - 2772) % 2 != 0)
+			diff_half1++;
+
+		for (index = 0; password[index]; index++)
+		{
+			if (password[index] >= (33 + diff_half1))
+			{
+				password[index] -= diff_half1;
+				break;
+			}
+		}
+		for (index = 0; password[index]; index++)
+		{
+			if (password[index] >= (33 + diff_half2))
+			{
+				password[index] -= diff_half2;
+				break;
+			}
+		}
 	}
-		else if (2772 - sum <= 126)
-		{
-			random = 2772 - sum;
-		}
-		else
-		{
-			random = rand() % (126 - 48) + 48;
-		}
 
-		if (random)
-		{
-			password[counter++] = random;
-			sum += random;
-		}
-		random = 0;
-	}
+	printf("%s", password);
 
-	password[counter] = '\0';
-	printf("%s\n", password);
-
-	return 0;
+	return (0);
 }
