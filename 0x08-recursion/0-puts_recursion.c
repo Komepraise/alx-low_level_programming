@@ -1,16 +1,18 @@
 #include <stdio.h>
 #include "main.h"
 /*
- *@s : The variable
+ * _puts_recursion -  The function
+ * @s: The variable
  */
 
 void _puts_recursion(char *s)
-	char s;
-	*s = s;
-	for (s=1; s < '\n'; s=s++)
 {
-	_putchar(*s);
+	if (*s)
+	{
+		_putchar(*s);
+		_puts_recursion(s + 1);
+	}
+
+	else
+		_putchar('\n');
 }
-
-
-
