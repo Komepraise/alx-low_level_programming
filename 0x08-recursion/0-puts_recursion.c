@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /*
- * _puts_recursion - The function to be called
+ * _puts_recursion: The function to be called
  * @s: The variable
  */
 
