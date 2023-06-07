@@ -1,9 +1,7 @@
 #include <stdio.h>
 
-//Done by Oghenekome Praise
-
 /*
- *
+ *@s : The variable
  */
 
 void _puts_recursion(char *s)
