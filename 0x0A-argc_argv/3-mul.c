@@ -5,9 +5,6 @@
  * main - multiplies two numbers
  * @argc: the number of inputs
  * @argv: the array of inputs
- * @_1stno: the first number
- * @_2ndno: the second number
- * @ans: the answer
  *
  * Return: 0
  *
